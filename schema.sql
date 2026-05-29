@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS github_profiles(
     github_score INT DEFAULT 0,
     
     analyzed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    updayed_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
 
     INDEX idx_username(username),
     INDEX idx_score(github_score DESC),
